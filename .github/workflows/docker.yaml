@@ -1,0 +1,13 @@
+name: CICD for build, lint, format and test code
+
+on: [pull_request]
+
+jobs:
+  run-shell-command:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checking version of Tools
+        run: |
+          node -v
+          npm -v
+          aws --version
