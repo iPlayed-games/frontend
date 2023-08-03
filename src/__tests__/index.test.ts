@@ -1,9 +1,7 @@
-import { add } from "../utils/Add";
+import { add } from '../utils/add'
 
-
-describe("Add Function", () => {
-    test("calls add function", () => {
-        expect(add(1,2)).toBe(3);
-
-    });
-});
+describe('Add Function', () => {
+  test('calls add function', () => {
+    expect(add(1, 2)).toBe(3)
+  })
+})
