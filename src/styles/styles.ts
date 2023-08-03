@@ -46,17 +46,9 @@ export const bounce = keyframes`
   }
 `
 
-export const Basic = styled.div`
-  ${basicStyles};
-`
 
-export const Combined = styled.div`
-  ${basicStyles};
-  ${hoverStyles};
-  & code {
-    background-color: linen;
-  }
-`
+
+
 export const Animated = styled.div`
   ${basicStyles};
   ${hoverStyles};

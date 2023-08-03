@@ -1,6 +1,6 @@
 "use client";
 
-import { Animated, Basic, bounce, Combined } from '../styles/styles'
+import { Animated, bounce } from '../styles/styles'
 
 
 export default function Home() {
