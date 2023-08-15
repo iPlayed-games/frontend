@@ -49,19 +49,19 @@ To run the development server, use the following command:
 `npm run dev`
 
 This will start the Next.js development server and allow you to preview your frontend.
-## Commiting 
+
+## Commiting
 
 After completing your component and you are ready to commit do the following...
 
 `npm run lint` and `npm run test`
-
 
 ## Scripts
 
 - dev: Start the Next.js development server.
 - build: Build the Next.js project.
 - start: Start the Next.js production server.
-- lint: Run TypeScript, Next.js linting, and auto-format with Prettier. 
+- lint: Run TypeScript, Next.js linting, and auto-format with Prettier.
 - test: Run Jest tests in watch mode.
 
 ## Dependencies
@@ -86,7 +86,8 @@ After completing your component and you are ready to commit do the following...
 
 ## Contributing
 
-If you're interested in participating, sign up at the following URL: 
+If you're interested in participating, sign up at the following URL:
+
 - [Sign-Up Form](https://forms.gle/nAsyk91DiCZB3tAk7)
 
 ## License
