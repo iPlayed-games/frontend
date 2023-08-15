@@ -9,6 +9,7 @@ Table of Contents
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
 - [Usage](#usage)
+  - [Commiting](#commiting)
 - [Scripts](#scripts)
 - [Dependencies](#dependencies)
 - [Dev Dependencies](#dev-dependencies)
@@ -31,30 +32,36 @@ Before you begin, ensure you have the following prerequisites:
 
 1. Clone the repository:
 
-   git clone https://github.com/iplayed/iplayed-frontend.git
+   `git clone https://github.com/iplayed/iplayed-frontend.git`
 
 2. Navigate to the project directory:
 
-   cd iplayed-frontend
+   `cd iplayed-frontend`
 
 3. Install dependencies:
 
-   npm install
+   `npm install`
 
 ## Usage
 
 To run the development server, use the following command:
 
-npm run dev
+`npm run dev`
 
 This will start the Next.js development server and allow you to preview your frontend.
+## Commiting 
+
+After completing your component and you are ready to commit do the following...
+
+`npm run lint` and `npm run test`
+
 
 ## Scripts
 
 - dev: Start the Next.js development server.
 - build: Build the Next.js project.
 - start: Start the Next.js production server.
-- lint: Run TypeScript, Next.js linting, and auto-format with Prettier.
+- lint: Run TypeScript, Next.js linting, and auto-format with Prettier. 
 - test: Run Jest tests in watch mode.
 
 ## Dependencies
