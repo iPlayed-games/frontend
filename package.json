@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "tsc && next lint && prettier . --write",
-    "test": "jest --watch"
+    "test": "jest"
   },
   "dependencies": {
     "@types/node": "20.4.5",
