@@ -56,7 +56,7 @@ This will start the Next.js development server and allow you to preview your fro
 
 ## Commiting
 
-[Branch out](https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging) by following the structure `feature/add-your-branch-name` or `chore/add-your-branch-name` or `fix/add-your-branch-name` and submit your [PR](https://docs.github.com/en/github/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests)
+[Branch out](https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging) by following the structure [ISSUE-ID]-[Similar ticket title] and submit your [PR](https://docs.github.com/en/github/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests). For example: `9-Login_form`
 
 After completing your component and you are ready to commit do the following...
 
