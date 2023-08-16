@@ -46,11 +46,6 @@ Before you begin, ensure you have the following prerequisites:
 
    `npm install`
 
-6. Run `npm run dev`
-
-7. [Branch out](https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging) by following the structure `feature/add-your-branch-name` or `chore/add-your-branch-name` or `fix/add-your-branch-name` and submit your [PR](https://docs.github.com/en/github/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests)
-   
-
 ## Usage
 
 To run the development server, use the following command:
@@ -58,19 +53,21 @@ To run the development server, use the following command:
 `npm run dev`
 
 This will start the Next.js development server and allow you to preview your frontend.
-## Commiting 
+
+## Commiting
+
+[Branch out](https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging) by following the structure `feature/add-your-branch-name` or `chore/add-your-branch-name` or `fix/add-your-branch-name` and submit your [PR](https://docs.github.com/en/github/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests)
 
 After completing your component and you are ready to commit do the following...
 
 `npm run lint` and `npm run test`
-
 
 ## Scripts
 
 - dev: Start the Next.js development server.
 - build: Build the Next.js project.
 - start: Start the Next.js production server.
-- lint: Run TypeScript, Next.js linting, and auto-format with Prettier. 
+- lint: Run TypeScript, Next.js linting, and auto-format with Prettier.
 - test: Run Jest tests in watch mode.
 
 ## Dependencies
@@ -95,7 +92,8 @@ After completing your component and you are ready to commit do the following...
 
 ## Contributing
 
-If you're interested in participating, sign up at the following URL: 
+If you're interested in participating, sign up at the following URL:
+
 - [Sign-Up Form](https://forms.gle/nAsyk91DiCZB3tAk7)
 
 ## License
