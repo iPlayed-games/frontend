@@ -36,8 +36,8 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Run typescript compiler, eslint and prettier
-        run: npm run lint
-        
-      - name: Run unit test
-        run: npm run test
+      - name: Run typescript compiler, eslint and prettier and Unit tests
+        run: |
+          npm run lint
+          npm run test
+
