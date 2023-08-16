@@ -17,6 +17,13 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: '16.x'
+      - name: Cache Dependencies
+        uses: actions/cache@v2
+        with:
+          path: ~/.npm
+          key: temp-${{ runner.os }}-cache-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            temp-${{ runner.os }}-cache-
       - name: Install dependencies
         run: npm install
       - name: Run typescript compiler, eslint and prettier
