@@ -30,15 +30,19 @@ Before you begin, ensure you have the following prerequisites:
 
 ### Installation
 
-1. Clone the repository:
+1. [Clone the repository](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository-from-github/cloning-a-repository):
 
    `git clone https://github.com/iplayed/iplayed-frontend.git`
 
-2. Navigate to the project directory:
+2. Ask on Discord for the `.env` file credentials if necessary and add it to your local copy.
+
+3. Keep the `.env-template` file and create a `.env` file with the credentials. To use the key from the credentials file, use ` const EXAMPLE_KEY = process.env.EXAMPLE_KEY;`
+
+4. Navigate to the project directory:
 
    `cd iplayed-frontend`
 
-3. Install dependencies:
+5. Install dependencies:
 
    `npm install`
 
@@ -51,6 +55,8 @@ To run the development server, use the following command:
 This will start the Next.js development server and allow you to preview your frontend.
 
 ## Commiting
+
+[Branch out](https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging) by following the structure [ISSUE-ID]-[Similar ticket title] and submit your [PR](https://docs.github.com/en/github/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests). For example: `9-Login_form`
 
 After completing your component and you are ready to commit do the following...
 
