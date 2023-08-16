@@ -1,5 +1,7 @@
 'use client';
 import Hero from '../components/Hero'
+import { Animated, bounce } from '../styles/styles'
+
 
 export default function Home() {
   return (
@@ -7,6 +9,7 @@ export default function Home() {
       <Hero />
 
       <h1>This is a page</h1>
+      <Animated animation={bounce}>Let's bounce.</Animated>
     </main>
   )
 }
