@@ -1,0 +1,65 @@
+.header {
+    background-image: url("../../public//images/header-background.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 1rem 0;
+}
+
+.button_outlined {
+    border: 1px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(to right, #DE00FF, #047CFF);
+    color: #fafafa;
+    background-color: transparent;
+    position: relative;
+}
+.button_outlined:hover {
+    border: 1px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(to right, #047CFF, #DE00FF);
+    box-shadow: none;
+    color: #fafafa;
+    background-color: transparent;
+}
+.button_outlined:hover::after{
+    border-image-source: linear-gradient(to right, #047CFF, #DE00FF);
+}
+.button_outlined::after {
+    content: '';
+    position: absolute;
+    width: calc(100% + 3px);
+    height: calc(100% + 3px);
+    border: 2px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(to right, #DE00FF, #047CFF);
+    filter: blur(2px);
+    background-color: transparent;
+    border-radius: 0;
+}
+
+.button_contained {
+    background-image: linear-gradient(to right, #DE00FF, #047CFF);
+    border-radius: 0;
+    position: relative;
+}
+
+.button_contained::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    filter: blur(2px);
+    border-radius: 0;
+    border: 6px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(to right, #DE00FF, #047CFF);
+}
+
+.button_contained:hover {
+    background-image: linear-gradient(to right, #047CFF, #DE00FF);
+}
+
+.button_contained:hover::after {
+    border-image-source: linear-gradient(to right, #047CFF, #DE00FF);
+}
