@@ -1,15 +1,21 @@
 'use client';
-import Hero from '../components/Hero'
-import { Animated, bounce } from '../styles/styles'
+import { ThemeProvider } from '@emotion/react'
+import { theme } from '../styles/styles'
+import Hero from '../components/Hero';
+
+
 
 
 export default function Home() {
   return (
+    // <ThemeProvider theme={theme}>
+
     <main id="MainElement">
       <Hero />
 
-      <h1>This is a page</h1>
-      <Animated animation={bounce}>Let's bounce.</Animated>
-    </main>
+      
+    
+      </main>
+    // </ThemeProvider>
   )
 }
