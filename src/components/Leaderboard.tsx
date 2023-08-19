@@ -66,7 +66,7 @@ export default function StickyHeadTable() {
     // };
 
     return (
-        <Paper className={styles.glass}>
+        <Paper className={styles.leaderboard}>
             <TableContainer >
                 <h2 className={styles.h2}>Leaderboard</h2>
                 <Table  aria-label="Leaderboard">
@@ -75,11 +75,11 @@ export default function StickyHeadTable() {
                             .slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage)
                             .map((row) => {
                                 return (
-                                    <TableRow hover role="checkbox" tabIndex={-1} key={row.code}>
+                                    <TableRow  hover role="checkbox" tabIndex={-1} key={row.code}>
                                         {columns.map((column) => {
                                             const value = row[column.id];
                                             return (
-                                                <TableCell key={column.id} align={column.align}>
+                                                <TableCell className={styles.tableText} key={column.id} align={column.align}>
                                                     {column.format && typeof value === 'number'
                                                         ? column.format(value +' Badges')
                                                         : value} 

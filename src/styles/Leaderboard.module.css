@@ -1,16 +1,12 @@
-.glass {
+.leaderboard {
     position: relative;
     overflow: hidden;
-right: 10px;
-    padding_top: 50px;
+    right: 10px;
+    padding: 25px;
     border-radius: 35px;
-    border: 4px solid #FAFAFA;
-    background: rgba(250, 250, 250, 0.60);
+    border: 4px solid #fafafa;
+    background: rgba(250, 250, 250, 0.4);
     width: 340px;
-}
-
-.paper {
-    filter: blur(2px);
 }
 
 .h2 {
@@ -18,9 +14,16 @@ right: 10px;
     isolation: isolate;
     text-align: center;
     color: #FAFAFA;
-    font-family: Roboto;
+    font-family: var(--font-roboto);
+        font-weight: 900;
     font-size: 24px;
     font-style: normal;
-    font-weight: 300;
     line-height: normal;
+}
+
+.tableText{
+    font-family: var(--font-roboto);
+    font-weight: 500;
+    font-size: 18px;
+    color: #FAFAFA;
 }

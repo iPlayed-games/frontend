@@ -2,8 +2,9 @@ import type { Metadata } from 'next'
 import { Roboto } from 'next/font/google'
 import { CssBaseline } from '@mui/material'
 
+//TODO for create fonts configuration variable.
 const roboto = Roboto({
-  weight: ['400', '700'],
+  weight: ['400','500', '700','900'],
   style: ['normal', 'italic'],
   subsets: ['latin'],
   display: 'swap',
@@ -17,7 +18,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body className={roboto.className}>
+      <body className={roboto.variable}>
       <CssBaseline />
         {children}
       </body>
