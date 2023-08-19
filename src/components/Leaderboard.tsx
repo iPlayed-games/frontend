@@ -60,29 +60,16 @@ export default function StickyHeadTable() {
         setPage(newPage);
     };
 
-    const handleChangeRowsPerPage = (event: React.ChangeEvent<HTMLInputElement>) => {
-        setRowsPerPage(+event.target.value);
-        setPage(0);
-    };
+    // const handleChangeRowsPerPage = (event: React.ChangeEvent<HTMLInputElement>) => {
+    //     setRowsPerPage(+event.target.value);
+    //     setPage(0);
+    // };
 
     return (
         <Paper className={styles.glass}>
             <TableContainer >
                 <h2 className={styles.h2}>Leaderboard</h2>
                 <Table  aria-label="Leaderboard">
-                    <TableHead>
-                        <TableRow className={styles.tablerow}>
-                            {columns.map((column) => (
-                                <TableCell
-                                    key={column.id}
-                                    align={column.align}
-                                    style={{ minWidth: column.minWidth }}
-                                >
-                                    {column.label}
-                                </TableCell>
-                            ))}
-                        </TableRow>
-                    </TableHead>
                     <TableBody>
                         {rows
                             .slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage)
@@ -94,8 +81,8 @@ export default function StickyHeadTable() {
                                             return (
                                                 <TableCell key={column.id} align={column.align}>
                                                     {column.format && typeof value === 'number'
-                                                        ? column.format(value)
-                                                        : value}
+                                                        ? column.format(value +' Badges')
+                                                        : value} 
                                                 </TableCell>
                                             );
                                         })}
