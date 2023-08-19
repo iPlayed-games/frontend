@@ -1,129 +1,64 @@
-import { css } from '@emotion/react';
+/* eslint-disable import/no-anonymous-default-export */
+import { css } from '@emotion/react'
 import styled from '@emotion/styled'
-import * as m from '../../styles/_mixins';
-import { $white, $darkBgColor, $lgDesktopBreakpoint } from '../../styles/_variables';
+import * as m from '../../styles/_mixins'
+import { $lgDesktopBreakpoint } from '../../styles/_variables'
 
 const Footer = styled.footer`
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  color: ${$white};
-  height: 22rem;
-`;
+  background: rgb(240, 8, 235);
+  background: -moz-linear-gradient(
+    163deg,
+    rgba(240, 8, 235, 1) 8%,
+    rgba(192, 26, 242, 1) 20%,
+    rgba(29, 83, 253, 1) 55%,
+    rgba(11, 22, 102, 1) 79%
+  );
+  background: -webkit-linear-gradient(
+    163deg,
+    rgba(240, 8, 235, 1) 8%,
+    rgba(192, 26, 242, 1) 20%,
+    rgba(29, 83, 253, 1) 55%,
+    rgba(11, 22, 102, 1) 79%
+  );
+  background: linear-gradient(163deg, rgba(240, 8, 235, 1) 0%, rgba(29, 83, 253, 1) 35%, rgba(11, 22, 102, 1) 79%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f008eb",endColorstr="#0b1666",GradientType=1);
+  min-height: 22rem;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-end;
+  padding-bottom: 64px;
+`
 
 const Container = styled.div`
   margin: 0 auto;
   width: 100%;
   max-width: ${$lgDesktopBreakpoint};
 
-  padding-top: 2.5rem;
   text-align: center;
 
   ${m.tablet(css`
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        text-align: left;
-    `)}
-`;
-
-const Logo = styled.a`
-  cursor: pointer;
-
-  &:hover {
-    opacity: 0.6;
-  }
-
-  //media query mixins
-  ${m.tablet(css`
-    margin: 0;
-    max-width: max-content;
-  `)}
-`;
-
-const NavSocialsContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-`;
-
-const Nav = styled.nav`
-  //media query mixins
-  ${m.tablet(css`
-    min-width: 6.5rem;
-    order: 2;
-  `)}
-
-  ${m.largeDesktop(css`
-    font-size: 1.5rem;
-  `)}
-`;
-
-const NavList = styled.ul`
-  padding: 0;
-
-  //media query mixins
-  ${m.tablet(css`
     display: flex;
+    justify-content: space-between;
+    text-align: left;
+    align-items: flex-end;
   `)}
-`;
-
-const NavItem = styled.li`
-  margin: 0.5rem 0;
-
-  //media query mixins
-  ${m.tablet(css`
-    padding-left: 50px;
-  `)}
-`;
-
-const SocialIconsContainer = styled.div``;
-
-const SocialList = styled.ul`
-  display: flex;
-  justify-content: center;
-  margin: revert;
-  padding: 0;
-
-  //media query mixins
-  ${m.tablet(css`
-    justify-content: end;
-  `)}
-`;
-
-const SocialItem = styled.li`
-  cursor: pointer;
-  ${m.transition('all 0.3s ease')};
-
-  &:hover {
-    opacity: 0.6;
-  }
-
-  //media query mixins
-  ${m.tablet(css`
-    padding-left: 28px;
-    max-width: 100%;
-  `)}
-`;
+`
 
 const Copyright = styled.p`
   text-align: center;
   margin: 0;
-  font-size: 1rem;
-  padding-bottom: 2.5rem;
+  font-size: 0.75rem;
+  font-weight: 300;
 
   //media query mixins
   ${m.tablet(css`
     text-align: end;
   `)}
-`;
+`
 
 export default {
   Footer,
   Container,
-  Logo,
-  NavSocialsContainer,
-  Nav,
-  NavList,
-  NavItem,
-  SocialList,
-  SocialItem,
   Copyright,
-};
+}
