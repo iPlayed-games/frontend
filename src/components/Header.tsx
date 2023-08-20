@@ -9,6 +9,7 @@ import TextField from '@mui/material/TextField'
 import Autocomplete from '@mui/material/Autocomplete'
 import Stack from '@mui/material/Stack'
 import top100Films from '../tempData'
+import Searchbar from './Searchbar'
 
 interface HeaderProps {}
 
@@ -20,26 +21,7 @@ const Header: FC<HeaderProps> = ({}) => {
         maxWidth="lg"
       >
         <Logo />
-        <Stack spacing={2} sx={{ width: 300 }}>
-          <Autocomplete
-            freeSolo
-            id="free-solo-2-demo"
-            disableClearable
-            options={top100Films.map((option) => option.label)}
-            renderInput={(params) => {
-              return (
-                <TextField
-                  {...params}
-                  label="Search input"
-                  InputProps={{
-                    ...params.InputProps,
-                    type: 'search',
-                  }}
-                />
-              )
-            }}
-          />
-        </Stack>
+        <Searchbar />
         <Box sx={{ display: 'flex', gap: '2rem' }}>
           <Button className={styles.button_outlined} variant="outlined" size="large" component="a" href="/">
             Log in
