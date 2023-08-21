@@ -1,15 +1,14 @@
 'use client'
 import { FC } from 'react'
-import Logo from './Logo'
+import Logo from '../Logo/Logo'
 import Box from '@mui/material/Box'
 import Container from '@mui/material/Container'
-import styles from '../styles/Header.module.css'
+import styles from './Header.module.css'
 import Button from '@mui/material/Button'
 import TextField from '@mui/material/TextField'
 import Autocomplete from '@mui/material/Autocomplete'
 import Stack from '@mui/material/Stack'
-import top100Films from '../tempData'
-import Searchbar from './Searchbar'
+import top100Films from '../../tempData'
 
 interface HeaderProps {}
 
@@ -21,7 +20,7 @@ const Header: FC<HeaderProps> = ({}) => {
         maxWidth="lg"
       >
         <Logo />
-        <Searchbar />
+
         <Box sx={{ display: 'flex', gap: '2rem' }}>
           <Button className={styles.button_outlined} variant="outlined" size="large" component="a" href="/">
             Log in
