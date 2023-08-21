@@ -2,6 +2,7 @@ import { CssBaseline } from '@mui/material'
 import type { Metadata } from 'next'
 import { Roboto } from 'next/font/google'
 import Header from '../components/Header/Header'
+import { Footer } from '../components'
 
 const roboto = Roboto({
   subsets: ['latin'],
@@ -20,7 +21,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <CssBaseline />
         <Header />
         {children}
-      </body>
+        <Footer />
+      </body> 
     </html>
   )
 }
