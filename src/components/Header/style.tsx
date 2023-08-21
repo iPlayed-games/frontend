@@ -1,8 +1,7 @@
-import { css } from '@emotion/react'
 import styled from '@emotion/styled'
 import { Box, Container } from '@mui/material'
 
-export const HeaderComponent = styled.div`
+export const HeaderComponent = styled.header`
   background: rgb(240, 8, 235);
   background: -moz-linear-gradient(
     163deg,
@@ -23,13 +22,13 @@ export const HeaderComponent = styled.div`
   padding: 1rem 0;
 `
 export const CustomContainer = styled(Container)`
-      display: 'flex', 
-      gap: '2rem',
-      justify-content: 'space-between',
-      align-items: 'center',
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+  align-items: center;
 `
 
 export const CustomBox = styled(Box)`
-        display: 'flex', 
-        gap: '2rem',
+  display: flex;
+  gap: 2rem;
 `

@@ -1,8 +1,8 @@
+'use client'
 import { FC } from 'react'
 import Logo from '../Logo/Logo'
-import styles from './Header.module.css'
-import Button from '@mui/material/Button'
-import { HeaderComponent, CustomBox, CustomContainer } from './style'
+import { CustomContainer, HeaderComponent, CustomBox } from './style'
+import { Button } from '@mui/material'
 
 interface HeaderProps {}
 
@@ -12,10 +12,10 @@ const Header: FC<HeaderProps> = ({}) => {
       <CustomContainer maxWidth="lg">
         <Logo />
         <CustomBox>
-          <Button className={styles.button_outlined} variant="outlined" size="large" component="a" href="/">
+          <Button variant="outlined" size="large" component="a" href="/login">
             Log in
           </Button>
-          <Button className={styles.button_contained} variant="contained" size="large" component="a" href="/">
+          <Button variant="contained" size="large" component="a" href="/signup">
             Sign up
           </Button>
         </CustomBox>
