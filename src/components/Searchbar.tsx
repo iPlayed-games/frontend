@@ -1,12 +1,8 @@
 import { FC } from 'react'
-import TextField from '@mui/material/TextField'
-import Autocomplete from '@mui/material/Autocomplete'
 import Stack from '@mui/material/Stack'
 import top100Films from '../tempData'
 import SearchIcon from '@mui/icons-material/Search'
-import { InputAdornment, backdropClasses, useAutocomplete } from '@mui/material'
-import Input from '@mui/material/Input'
-import InputLabel from '@mui/material/InputLabel'
+import { useAutocomplete } from '@mui/material'
 import List from '@mui/material/List'
 import styles from '../styles/Searchbar.module.css'
 
