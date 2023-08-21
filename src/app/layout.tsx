@@ -1,9 +1,13 @@
-import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
 import { CssBaseline } from '@mui/material'
-import './global.css'
+import type { Metadata } from 'next'
+import { Roboto } from 'next/font/google'
+import Header from '../components/Header/Header'
+import { Footer } from '../components'
 
-const inter = Inter({ subsets: ['latin'] })
+const roboto = Roboto({
+  subsets: ['latin'],
+  weight: '400',
+})
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -13,8 +17,12 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <CssBaseline/>
-      <body className={inter.className}>{children}</body>
+      <body className={roboto.className}>
+        <CssBaseline />
+        <Header />
+        {children}
+        <Footer />
+      </body> 
     </html>
   )
 }
