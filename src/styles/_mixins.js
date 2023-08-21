@@ -1,8 +1,7 @@
 import { css } from '@emotion/react'
 import {
-  $lgMobileBreakpoint,
+  $mobileBreakpoint,
   $tabletBreakpoint,
-  $desktopBreakpoint,
   $lgDesktopBreakpoint,
 } from './_variables'
 
@@ -20,12 +19,6 @@ export const tablet = (content) => css`
   }
 `
 
-export const desktop = (content) => css`
-  @media (min-width: ${$desktopBreakpoint}) {
-    ${content}
-  }
-`
-
 export const largeDesktop = (content) => css`
   @media (min-width: ${$lgDesktopBreakpoint}) {
     ${content}
@@ -33,7 +26,7 @@ export const largeDesktop = (content) => css`
 `
 
 export const mobile = (content) => css`
-  @media (max-width: ${$lgMobileBreakpoint}) {
+  @media (max-width: ${$mobileBreakpoint}) {
     ${content}
   }
 `
