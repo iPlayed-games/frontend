@@ -1,4 +1,4 @@
-import { Logo } from '@/src/assets'
+import { Logo } from '@/src/assets/svg'
 import {FooterContainer, Container, Copyright} from './styles'
 
 const Footer = () => {
