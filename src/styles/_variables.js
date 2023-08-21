@@ -9,8 +9,3 @@ export const // Media Query Breakpoints
   $mediumDesktopBreakpoint = '1250px',
   $lgDesktopBreakpoint = '1440px',
   $xlBreakpoint = '2560px'
-
-export const //Colors
-  $black = '#000000',
-  $white = '#ffffff',
-  $darkBgColor = '#000000'
