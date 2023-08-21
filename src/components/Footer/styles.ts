@@ -1,10 +1,10 @@
-/* eslint-disable import/no-anonymous-default-export */
+
 import { css } from '@emotion/react'
 import styled from '@emotion/styled'
 import * as m from '../../styles/_mixins'
 import { $lgDesktopBreakpoint } from '../../styles/_variables'
 
-const Footer = styled.footer`
+export const FooterContainer = styled.footer`
   background: rgb(240, 8, 235);
   background: -moz-linear-gradient(
     163deg,
@@ -30,7 +30,7 @@ const Footer = styled.footer`
   padding-bottom: 64px;
 `
 
-const Container = styled.div`
+export const Container = styled.div`
   margin: 0 auto;
   width: 100%;
   max-width: ${$lgDesktopBreakpoint};
@@ -45,7 +45,7 @@ const Container = styled.div`
   `)}
 `
 
-const Copyright = styled.p`
+export const Copyright = styled.p`
   text-align: center;
   margin: 0;
   font-size: 0.75rem;
@@ -56,9 +56,3 @@ const Copyright = styled.p`
     text-align: end;
   `)}
 `
-
-export default {
-  Footer,
-  Container,
-  Copyright,
-}
