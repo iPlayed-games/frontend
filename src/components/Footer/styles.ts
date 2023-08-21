@@ -29,6 +29,7 @@ export const FooterContainer = styled.footer`
   align-content: flex-end;
   padding-bottom: 64px;
 `
+/* TODO: Create bug ticket after release to fix padding-right and padding-left. {Raphael Comments} */
 
 export const Container = styled.div`
   margin: 0 auto;
