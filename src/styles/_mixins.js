@@ -1,9 +1,5 @@
 import { css } from '@emotion/react'
-import {
-  $mobileBreakpoint,
-  $tabletBreakpoint,
-  $lgDesktopBreakpoint,
-} from './_variables'
+import { $mobileBreakpoint, $tabletBreakpoint, $lgDesktopBreakpoint } from './_variables'
 
 export const transition = ($args) => css`
   -webkit-transition: ${$args};
