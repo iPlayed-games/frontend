@@ -1,76 +1,67 @@
-:root{
+/* Keep these for now 
 --clr-neon:hsl(317 100% 54%);
---clr-bg: hsl(323 21% 16%);
-}
+--clr-bg: hsl(323 21% 16%); 
+*/
 
 .hero {
-    display: table;
-    margin: 0;
-    width: 100%;
-    height: 542px;
-    background-image: url('../../public/images/hero_background.svg');
-    background-size: cover;
-
+  display: table;
+  margin: 0;
+  width: 100%;
+  height: 542px;
+  background-image: url('../../public/images/hero_background.svg');
+  background-size: cover;
 }
 
 @media only screen and (max-width: 600px) {
-    .hero {
-        height: 100%;
-    }
+  .hero {
+    height: 100%;
+  }
 }
 
 .caption {
-    width: 80%;
-    padding-left: 40px;
-
+  width: 80%;
+  padding-left: 40px;
 }
 
 .title {
-    color: #FAFAFA;
-    font-family: var(--font-roboto);
-    font-size: 48px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
+  color: #fafafa;
+  font-family: var(--font-roboto);
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
 }
 
 .text {
-    color: #FAFAFA;
-    font-family: var(--font-roboto);
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
+  color: #fafafa;
+  font-family: var(--font-roboto);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
 }
 
-/* .button {
-    border: 1px solid #FAFAFA;
-    background: rgba(250, 250, 250, 0.20);
-    filter: blur(2px);
-} */
 .col {
-    display: table-cell;
-    padding: 50px 0px 0px 40px;
+  display: table-cell;
+  padding: 50px 0px 0px 40px;
 }
 
 @media only screen and (max-width: 600px) {
-    .col {
-        display: block;
-        width: 100%;
-    }
+  .col {
+    display: block;
+    width: 100%;
+  }
 }
 
 .buttonNeonPink {
-    color: hsl(317 100% 54%);
-    font-family: var(--font-roboto);
-    font-size: 2rem;
-    display: inline-block;
-    text-decoration: none;
-    border: 0.125 solid currentColor;
-    border-radius: 0.25em;
-    cursor: pointer;
+  color: hsl(317 100% 54%);
+  font-family: var(--font-roboto);
+  font-size: 2rem;
+  display: inline-block;
+  text-decoration: none;
+  border: 0.125 solid currentColor;
+  border-radius: 0.25em;
+  cursor: pointer;
 
-    text-shadow:
-    0.125em 
-    0 0 0.125em currentColor;
+  text-shadow: 0.125em 0 0 0.125em currentColor;
 }

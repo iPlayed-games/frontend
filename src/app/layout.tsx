@@ -4,7 +4,7 @@ import { CssBaseline } from '@mui/material'
 
 //TODO for create fonts configuration variable.
 const roboto = Roboto({
-  weight: ['400','500', '700','900'],
+  weight: ['400', '500', '700', '900'],
   style: ['normal', 'italic'],
   subsets: ['latin'],
   display: 'swap',
@@ -18,8 +18,8 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body className={roboto.variable}>
-      <CssBaseline />
+      <body className={roboto.className}>
+        <CssBaseline />
         {children}
       </body>
     </html>
