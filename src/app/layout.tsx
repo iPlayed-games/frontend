@@ -1,6 +1,8 @@
+import { CssBaseline } from '@mui/material'
 import type { Metadata } from 'next'
 import { Roboto } from 'next/font/google'
-import { CssBaseline } from '@mui/material'
+import Header from '../components/Header/Header'
+import { Footer } from '../components'
 
 //TODO for create fonts configuration variable.
 const roboto = Roboto({
@@ -20,8 +22,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en">
       <body className={roboto.className}>
         <CssBaseline />
+        <Header />
         {children}
-      </body>
+        <Footer />
+      </body> 
     </html>
   )
 }
