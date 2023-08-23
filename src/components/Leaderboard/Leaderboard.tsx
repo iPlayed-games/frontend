@@ -7,7 +7,7 @@ import TableContainer from '@mui/material/TableContainer'
 import TableHead from '@mui/material/TableHead'
 import TablePagination from '@mui/material/TablePagination'
 import TableRow from '@mui/material/TableRow'
-import styles from '../styles/Leaderboard.module.css'
+import styles from './Leaderboard.module.css'
 
 interface Column {
   id: 'name' | 'badgeCount'
