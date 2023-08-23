@@ -7,12 +7,6 @@
   background-size: cover;
 }
 
-@media only screen and (max-width: 600px) {
-  .hero {
-    height: 100%;
-  }
-}
-
 .caption {
   width: 80%;
   padding-left: 40px;
@@ -39,11 +33,4 @@
 .col {
   display: table-cell;
   padding: 50px 0px 0px 40px;
-}
-
-@media only screen and (max-width: 600px) {
-  .col {
-    display: block;
-    width: 100%;
-  }
 }
