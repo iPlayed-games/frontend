@@ -1,37 +1,6 @@
+import { User } from '../types/userType'
 
-
-
-
-
-export const locationData: Location[] = [
-  {
-    address: '1 Yonge Street',
-    phone: '4575446666',
-    city: 'Toronto',
-    postalCode: 'M4P 0L0',
-    latitude: 41,
-    longitude: -38,
-  },
-  {
-    address: '2 Speers Street',
-    phone: '4575433366',
-    city: 'Toronto',
-    postalCode: 'M4P 1B1',
-    latitude: 45,
-    longitude: -30,
-  },
-  {
-    address: '4 Water Road',
-    phone: '1115433366',
-    city: 'Mississauga',
-    postalCode: 'L5H 1R1',
-    latitude: 12,
-    longitude: -39,
-  },
-]
-
-export const userData: User[] = 
-  [
+export const userData: User[] = [
     {
         "id": "64e559e8671afb1e48307b23",
         "name": "Daniel",
@@ -375,50 +344,17 @@ export const userData: User[] =
             "updatedAt": "2023-08-24T15:50:24.705Z",
             "userId": "64e77c40c119c64a304b9fe8"
         }
-    }
-
+    },
+    {
+        "id": "64e795e99b4efdd3945c0cb6",
+        "name": "jeffrey",
+        "email": "ilovecows@hotmail.com",
+        "password": "strongpassword1",
+        "username": "thejeffinator",
+        "totalBadge": 4021,
+        "createdAt": "2023-08-24T17:39:52.690Z",
+        "updatedAt": "2023-08-24T17:39:52.690Z",
+        "venue": null,
+    },
 ]
-
-export const venueData: Venue[] = [
-  {
-    id:'64e559e9671afb1e45007b2b',
-    name: 'Play Center 1',
-    email: 'playcenter1@gmail.com',
-    locationId: '',
-    description: 'Write some descrition here',
-    logo: 'http://logo.iplayed.com',
-    mainPhoto: 'http://mainphoto.iplayed.com',
-    category: ['Indoor'],
-    isAcessibility: false,
-    workingHoursOpen: 1692349200000,
-    workingHoursClose: 1692381600000,
-            createdAt: "2023-08-24T15:50:24.705Z",
-            updatedAt: "2023-08-24T15:50:24.705Z",
-  },
-  {
-    id:'64e559e9671afb1e45107b2b',
-    name: 'Aquarius',
-    email: 'aquarius@hotmail.com',
-    description: 'Come to look at the fishies, stay for the burger.',
-    logo: 'http://logo.iplayed.com',
-    mainPhoto: 'http://mainphoto.iplayed.com',
-    category: ['Aquatic', 'Indoor'],
-    isAcessibility: true,
-    workingHoursOpen: 1692345600000,
-    workingHoursClose: 1692374400000,
-  },
-  {
-    'id':'64e559e9671afb1e45207b2b',
-    'name': 'SkyPalace',
-    'email': 'skypalace@gmail.com',
-    'description': 'Fly with the birds, feel the wind in your hair.',
-    'logo': 'http://logo.iplayed.com',
-    'mainPhoto': 'http://mainphoto.iplayed.com',
-    'category': ['Aerial', 'Outdoor'],
-    'isAcessibility': false,
-    'workingHoursOpen': 1692352800000,
-    'workingHoursClose': 1692385200000,
-  },
-]
-
 
