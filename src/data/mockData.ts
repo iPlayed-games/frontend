@@ -1,46 +1,46 @@
 export interface Location {
-  address: string;
-  phone: string;
-  city: string;
-  postalCode: string;
-  latitude: number;
-  longitude: number;
+  address: string
+  phone: string
+  city: string
+  postalCode: string
+  latitude: number
+  longitude: number
 }
 
 export interface User {
-  name: string;
-  email: string;
-  password: string;
-  username: string;
-  totalBadge: number;
+  name: string
+  email: string
+  password: string
+  username: string
+  totalBadge: number
 }
 
 export interface Venue {
-  name: string;
-  email: string;
-  description: string;
-  logo: string;
-  mainPhoto: string;
-  category: Category[];
-  isAcessibility: boolean;
-  workingHoursOpen: number;
-  workingHoursClose: number;
+  name: string
+  email: string
+  description: string
+  logo: string
+  mainPhoto: string
+  category: Category[]
+  isAcessibility: boolean
+  workingHoursOpen: number
+  workingHoursClose: number
 }
 
 export interface Activity {
-  name: string;
-  description: string;
-  image: string;
-  startTimes: number[];
-  duration: number;
-  category: Category;
-  minPlayers: number;
-  maxPlayers: number;
-  ageRestriction: number;
-  price: number;
+  name: string
+  description: string
+  image: string
+  startTimes: number[]
+  duration: number
+  category: Category
+  minPlayers: number
+  maxPlayers: number
+  ageRestriction: number
+  price: number
 }
 
-export type Category = 'Indoor' | 'Outdoor' | 'Aquatic' | 'Aerial';
+export type Category = 'Indoor' | 'Outdoor' | 'Aquatic' | 'Aerial'
 
 export const locationData: Location[] = [
   {
