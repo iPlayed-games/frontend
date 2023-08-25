@@ -74,6 +74,7 @@ export const ButtonWhite = styled(MuiButton)`
 ${commonStyles}
 border: 1px solid ${$whiteColor};
 background: ${$whiteColorSemi};
+position: relative;
 &:hover{
     background: ${$whiteColor};
     color: ${$darkColor};
