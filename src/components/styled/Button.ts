@@ -1,6 +1,6 @@
 import styled from '@emotion/styled'
 import MuiButton from "@mui/material/Button";
-import { $whiteColor, $linearGradientToRight, $linearGradientToTop, $borderImage } from '../../styles/_variables'
+import { $whiteColor, $linearGradientToRight, $linearGradientToTop, $borderImage, $whiteColorSemi, $darkColor } from '../../styles/_variables'
 
 const commonStyles = `
 border-radius: 0;
@@ -23,7 +23,7 @@ export const ButtonGradientOutlined = styled(MuiButton)`
 ${commonStyles}
 border: 1px solid;
 ${$borderImage}
-background-color:transparent;
+background-color: transparent;
 position: relative;
 
 &:hover{
@@ -44,7 +44,7 @@ position: relative;
 &:hover::after {
     border-image-source: ${$linearGradientToTop};
 }
-`;
+`as typeof MuiButton;
 
 export const ButtonGradientFilled = styled(MuiButton)`
 ${commonStyles}
@@ -68,9 +68,24 @@ position: relative;
 &:hover::after {
     border-image-source: ${$linearGradientToTop};
 }
-`
+`as typeof MuiButton;
 
+export const ButtonWhite = styled(MuiButton)`
+${commonStyles}
+border: 1px solid ${$whiteColor};
+background: ${$whiteColorSemi};
+&:hover{
+    background: ${$whiteColor};
+    color: ${$darkColor};
+}
 
-// border: 6px solid;
-// border-image-slice: 1;
-// border-image-source: ${linearGradientToRight};
+&::after {
+    content: '';
+    position: absolute;
+    width: calc(100% + 5px);
+    height: calc(100% + 5px);
+    border: 4px solid ${$whiteColor};
+    filter: blur(4px);
+    background-color: transparent;
+}
+`as typeof MuiButton;

@@ -8,7 +8,8 @@ export const  //colors
   $darkColor = '#1E0A6A',
   $pinkColor = '#DE00FF',
   $blueColor = '#047CFF',
-  $whiteColor = '#fafafa'
+  $whiteColor = '#fafafa',
+  $whiteColorSemi = '	rgba(250,250,250,.2)'
 
 
 export const
@@ -20,3 +21,4 @@ export const
     border-image-slice: 1;
     border-image-source: ${$linearGradientToRight};
 `
+
