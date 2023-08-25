@@ -1,6 +1,6 @@
 import { FC } from 'react'
 import Stack from '@mui/material/Stack'
-import top100Films from '../../tempData'
+import top100Films from '../../data/tempData'
 import SearchIcon from '@mui/icons-material/Search'
 import { useAutocomplete } from '@mui/material'
 import List from '@mui/material/List'
