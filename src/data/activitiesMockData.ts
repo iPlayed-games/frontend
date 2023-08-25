@@ -1,6 +1,5 @@
 import { Activity } from '../types/activityType'
 
-
 export const activityData: Activity[] = [
   {
     id: '64e559e9671afb1e55007b2b',

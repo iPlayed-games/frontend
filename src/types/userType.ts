@@ -4,8 +4,6 @@ export interface User {
   id: string
   name: string
   email: string
-  locationId: string
-  description: string
   password: string
   username: string
   totalBadge: number
