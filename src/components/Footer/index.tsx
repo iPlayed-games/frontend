@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <FooterContainer>
       <Container>
-        <Logo /> 
+        <Logo />
         <Copyright>Copyright 2023 iPlayed Inc. All rights reserved</Copyright>
       </Container>
     </FooterContainer>
