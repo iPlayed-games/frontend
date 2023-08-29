@@ -1,7 +1,7 @@
 export default function Signup() {
   return (
-    <main id="MainElement">
-      <h1>This is a page</h1>
+    <main>
+      <h1>Sign Up Page</h1>
     </main>
   )
 }

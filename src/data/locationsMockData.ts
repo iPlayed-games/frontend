@@ -1,5 +1,6 @@
 import { type Location } from '@typing/locationType'
 
+
 export const locationData: Location[] = [
   {
     id: '62c6c17a-42ef-11ee-be56-0242ac120002',

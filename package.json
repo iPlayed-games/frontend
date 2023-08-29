@@ -6,8 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "tsc && next lint && prettier . --write",
-    "test": "jest"
+    "lint": "tsc && next lint && prettier . --write --no-cache && git add -A .",
+    "test": "jest",
+    "prepare": "husky install"
   },
   "dependencies": {
     "@emotion/react": "^11.11.1",
@@ -29,6 +30,7 @@
     "@testing-library/react": "^14.0.0",
     "@types/jest": "^29.5.3",
     "eslint-config-prettier": "^8.9.0",
+    "husky": "^8.0.0",
     "jest": "^29.6.2",
     "jest-environment-jsdom": "^29.6.2",
     "prettier": "^3.0.0"

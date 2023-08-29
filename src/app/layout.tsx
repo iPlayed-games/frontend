@@ -4,7 +4,9 @@ import { Roboto } from 'next/font/google'
 import Header from '@components/Header/Header'
 import { Footer } from '../components'
 
+
 //TODO for create fonts configuration variable.
+//TODO: use Roboto font-family from global styles
 const roboto = Roboto({
   weight: ['400', '500', '700', '900'],
   style: ['normal', 'italic'],
@@ -20,7 +22,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
+    <html>
       <body className={roboto.className}>
         <CssBaseline />
         <Header />
