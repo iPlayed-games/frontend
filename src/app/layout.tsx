@@ -1,16 +1,7 @@
-import { CssBaseline } from '@mui/material'
 import type { Metadata } from 'next'
-import { Roboto } from 'next/font/google'
 import Header from '../components/Header/Header'
 import { Footer } from '../components'
-
-//TODO for create fonts configuration variable.
-const roboto = Roboto({
-  weight: ['400', '500', '700', '900'],
-  style: ['normal', 'italic'],
-  subsets: ['latin'],
-  display: 'swap',
-})
+import ThemeRegistry from '../styles/themeRegistry/ThemeRegistry'
 
 export const metadata: Metadata = {
   title: 'iPlayed.games',
@@ -21,11 +12,12 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html>
-      <body className={roboto.className}>
-        <CssBaseline />
-        <Header />
-        {children}
-        <Footer />
+      <body>
+        <ThemeRegistry>
+          <Header />
+          {children}
+          <Footer />
+        </ThemeRegistry>
       </body>
     </html>
   )
