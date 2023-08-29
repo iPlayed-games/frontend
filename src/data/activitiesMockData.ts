@@ -1,4 +1,4 @@
-import { type Activity } from '../types/activityType'
+import { type Activity } from '../types/activity'
 
 export const activityData: Activity[] = [
   {

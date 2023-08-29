@@ -1,5 +1,5 @@
 'use client'
-import Hero from '../components/Hero/Hero'
+import { Hero } from "../components"
 
 export default function Home() {
   return (
