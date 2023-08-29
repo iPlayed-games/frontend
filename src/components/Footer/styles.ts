@@ -34,14 +34,15 @@ export const Container = styled.div`
   margin: 0 auto;
   width: 100%;
   max-width: ${$lgDesktopBreakpoint};
-
+  padding-left: 24px;
+  padding-right: 24px;
   text-align: center;
 
   ${m.tablet(css`
     display: flex;
-    justify-content: space-between;
     text-align: left;
     align-items: flex-end;
+    justify-content: space-between;
   `)}
 `
 

@@ -1,6 +1,6 @@
 'use client'
 import { FC } from 'react'
-import Logo from '../Logo/Logo'
+import { Logo } from '@/src/assets/svg'
 import { CustomContainer, HeaderComponent, CustomBox } from './style'
 import { Button } from '@mui/material'
 
