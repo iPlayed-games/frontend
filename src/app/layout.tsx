@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import ThemeRegistry from '../styles/themeRegistry/ThemeRegistry'
+import ThemeRegistry from '../contexts/themeRegistry/ThemeRegistry'
 import { Roboto } from 'next/font/google'
 import { Footer, Header } from '../components'
 import './global.css'
