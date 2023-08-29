@@ -1,8 +1,9 @@
 import { CssBaseline } from '@mui/material'
 import type { Metadata } from 'next'
 import { Roboto } from 'next/font/google'
-import { Footer, Header } from '../components'
-import './global.css'
+import Header from '@components/Header/Header'
+import { Footer } from '../components'
+
 
 //TODO for create fonts configuration variable.
 //TODO: use Roboto font-family from global styles
