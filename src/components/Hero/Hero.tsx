@@ -16,7 +16,9 @@ const Hero = () => {
           <p className={styles.text}>{HERO_DESCRIPTION}</p>
         </div>
       </div>
-      <div className={styles.col}><Leaderboard /></div>
+      <div className={styles.col}>
+        <Leaderboard />
+      </div>
     </div>
   )
 }
