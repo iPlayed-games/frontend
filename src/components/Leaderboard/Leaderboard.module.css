@@ -24,9 +24,9 @@
 }
 
 .tableText {
+  color: #fafafa;
   font-family: var(--font-roboto);
   font-weight: 500;
   line-height: 1.5em;
   font-size: 18px;
-  color: #fafafa;
 }

@@ -1,6 +1,7 @@
 'use client'
 
 import styles from './Hero.module.css'
+import Leaderboard from '../Leaderboard/Leaderboard'
 
 const HERO_TITLE: string = "Isn't it time you were rewarded for your epic skills?"
 const HERO_DESCRIPTION: string =
@@ -15,7 +16,7 @@ const Hero = () => {
           <p className={styles.text}>{HERO_DESCRIPTION}</p>
         </div>
       </div>
-      <div className={styles.col}>{/* Leaderboard Component */}</div>
+      <div className={styles.col}><Leaderboard /></div>
     </div>
   )
 }
