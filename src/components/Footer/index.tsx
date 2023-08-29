@@ -1,5 +1,5 @@
 'use client'
-import Logo from '../Logo/Logo'
+import { Logo } from '@/src/assets/svg'
 import { FooterContainer, Container, Copyright } from './styles'
 
 const Footer = () => {
