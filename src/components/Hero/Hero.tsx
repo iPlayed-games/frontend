@@ -1,7 +1,7 @@
 'use client'
 
 import styles from './Hero.module.css'
-import Leaderboard from '../Leaderboard/Leaderboard'
+import Leaderboard from '../Leaderboard'
 
 const HERO_TITLE: string = "Isn't it time you were rewarded for your epic skills?"
 const HERO_DESCRIPTION: string =
