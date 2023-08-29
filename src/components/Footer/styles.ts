@@ -1,7 +1,7 @@
 import { css } from '@emotion/react'
 import styled from '@emotion/styled'
-import * as m from 'styles/_mixins'
-import { $lgDesktopBreakpoint } from 'styles/_variables'
+import * as m from '@styles/_mixins'
+import { $lgDesktopBreakpoint } from '@styles/_variables'
 
 export const FooterContainer = styled.footer`
   background: rgb(240, 8, 235);
