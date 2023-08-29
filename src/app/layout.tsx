@@ -5,6 +5,7 @@ import { Footer, Header } from '../components'
 import './global.css'
 
 //TODO for create fonts configuration variable.
+//TODO: use Roboto font-family from global styles
 const roboto = Roboto({
   weight: ['400', '500', '700', '900'],
   style: ['normal', 'italic'],
