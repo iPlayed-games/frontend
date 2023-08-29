@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "tsc && next lint && prettier . --write --no-cache",
+    "lint": "tsc && next lint && prettier . --write --no-cache && git add -A .",
     "test": "jest",
     "prepare": "husky install"
   },
