@@ -1,13 +1,17 @@
 'use client'
 
 import CssBaseline from '@mui/material/CssBaseline'
-import NextAppDirEmotionCacheProvider from './EmotionCache'
+import EmotionCacheProvider from './EmotionCache'
 
-export default function ThemeRegistry({ children }: { children: React.ReactNode }) {
+type ThemeRegistryProps = {
+  children: React.ReactNode
+}
+
+export default function ThemeRegistry({ children }: ThemeRegistryProps) {
   return (
-    <NextAppDirEmotionCacheProvider options={{ key: 'mui' }}>
+    <EmotionCacheProvider options={{ key: 'mui' }}>
       <CssBaseline />
       {children}
-    </NextAppDirEmotionCacheProvider>
+    </EmotionCacheProvider>
   )
 }

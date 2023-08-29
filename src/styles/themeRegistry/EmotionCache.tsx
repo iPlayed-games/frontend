@@ -1,20 +1,21 @@
 'use client'
-import * as React from 'react'
+
+import { ReactNode, JSX, useState } from 'react'
 import createCache from '@emotion/cache'
 import { useServerInsertedHTML } from 'next/navigation'
 import { CacheProvider as DefaultCacheProvider } from '@emotion/react'
 import type { EmotionCache, Options as OptionsOfCreateCache } from '@emotion/cache'
 
-export type NextAppDirEmotionCacheProviderProps = {
+type EmotionCacheProviderProps = {
   options: Omit<OptionsOfCreateCache, 'insertionPoint'>
-  CacheProvider?: (props: { value: EmotionCache; children: React.ReactNode }) => React.JSX.Element | null
-  children: React.ReactNode
+  CacheProvider?: (props: { value: EmotionCache; children: ReactNode }) => JSX.Element | null
+  children: ReactNode
 }
 
-export default function NextAppDirEmotionCacheProvider(props: NextAppDirEmotionCacheProviderProps) {
+export default function EmotionCacheProvider(props: EmotionCacheProviderProps) {
   const { options, CacheProvider = DefaultCacheProvider, children } = props
 
-  const [registry] = React.useState(() => {
+  const [registry] = useState(() => {
     const cache = createCache(options)
     cache.compat = true
     const prevInsert = cache.insert
@@ -64,7 +65,7 @@ export default function NextAppDirEmotionCacheProvider(props: NextAppDirEmotionC
     })
 
     return (
-      <React.Fragment>
+      <>
         {globals.map(({ name, style }) => (
           <style
             key={name}
@@ -73,7 +74,7 @@ export default function NextAppDirEmotionCacheProvider(props: NextAppDirEmotionC
           />
         ))}
         {styles && <style data-emotion={dataEmotionAttribute} dangerouslySetInnerHTML={{ __html: styles }} />}
-      </React.Fragment>
+      </>
     )
   })
 
