@@ -1,4 +1,4 @@
-import { type Location } from 'types/locationType'
+import { type Location } from '@typing/locationType'
 
 export const locationData: Location[] = [
   {

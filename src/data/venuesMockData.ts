@@ -1,4 +1,4 @@
-import { type Venue } from 'types/venueType'
+import { type Venue } from '@typing/venueType'
 
 export const venueData: Venue[] = [
   {
