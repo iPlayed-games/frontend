@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import ThemeRegistry from '../contexts/themeRegistry/ThemeRegistry'
 import { Roboto } from 'next/font/google'
-import { Footer, Header } from '../components'
+import { Footer, Header } from '@components'
 import './global.css'
 
 //TODO for create fonts configuration variable.
