@@ -24,8 +24,8 @@ export default function Leaderboard() {
             {highScores.map(user => (
               <TableRow key={user.id}>
 
-                <TableCell className='tableText'>
-                 <h3>{user.username}<span className='alignRight'> { user.totalBadge}</span></h3> 
+                <TableCell className={styles.tableText}>
+                  <h3>{user.username}<span className={styles.alignRight}> { user.totalBadge}</span></h3> 
                 </TableCell>
 
 
