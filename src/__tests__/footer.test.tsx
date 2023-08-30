@@ -1,4 +1,4 @@
-import { Footer } from '../components'
+import { Footer } from '@components'
 import { render } from '@testing-library/react'
 
 describe('Footer', () => {

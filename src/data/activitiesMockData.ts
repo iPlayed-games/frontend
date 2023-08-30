@@ -1,4 +1,4 @@
-import { type Activity } from '@typing/activityType'
+import { type Activity } from '@typing/activity'
 
 export const activityData: Activity[] = [
   {
