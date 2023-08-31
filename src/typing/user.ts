@@ -1,4 +1,4 @@
-import { Venue } from './venueType'
+import { Venue } from './venue'
 
 export interface User {
   id: string

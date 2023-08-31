@@ -5,5 +5,11 @@ const createJestConfig = nextJest({
 const customJestConfig = {
   moduleDirectories: ['node_modules', '<rootDir>/'],
   testEnvironment: 'jest-environment-jsdom',
+  moduleNameMapper: {
+    '@components': '<rootDir>/src/components/index',
+    '@typing': '<rootDir>/src/typing/index',
+    '@svg': '<rootDir>/src/assets/svg/index',
+    '@common': '<rootDir>/src/common/index',
+  },
 }
 module.exports = createJestConfig(customJestConfig)
