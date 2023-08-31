@@ -6,6 +6,8 @@ const roboto = Roboto({
   weight: ['100', '300', '400', '500', '700', '900'],
   style: ['normal', 'italic'],
   subsets: ['latin'],
+  display: 'swap',
+  fallback: ['sans-serif', 'Helvetica', 'Arial'],
 })
 
 const STYLES: GlobalStylesProps['styles'] = {
@@ -17,7 +19,7 @@ const STYLES: GlobalStylesProps['styles'] = {
     clipRule: 'evenodd',
   },
   'html, body': {
-    fontFamily: `${roboto.style.fontFamily}, sans-serif`,
+    fontFamily: roboto.style.fontFamily,
     color: $whiteColor,
     height: '100%',
     scrollBehavior: 'smooth',
