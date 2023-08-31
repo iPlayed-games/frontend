@@ -1,27 +1,21 @@
-'use client'
-import { FC } from 'react'
 import { Logo } from '@svg'
 import { CustomContainer, HeaderComponent, CustomBox } from './style'
-import { Button } from '@mui/material'
+import { ButtonGradientFilled, ButtonGradientOutlined } from '@common'
 
-interface HeaderProps {}
-
-const Header: FC<HeaderProps> = ({}) => {
+export default function Header() {
   return (
     <HeaderComponent>
       <CustomContainer maxWidth="lg">
         <Logo />
         <CustomBox>
-          <Button variant="outlined" size="large" component="a" href="/login">
-            Log in
-          </Button>
-          <Button variant="contained" size="large" component="a" href="/signup">
-            Sign up
-          </Button>
+          <ButtonGradientOutlined disableRipple component="a" href="/login">
+            Log In
+          </ButtonGradientOutlined>
+          <ButtonGradientFilled disableRipple component="a" href="/signup">
+            Sign Up
+          </ButtonGradientFilled>
         </CustomBox>
       </CustomContainer>
     </HeaderComponent>
   )
 }
-
-export default Header

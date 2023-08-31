@@ -1,5 +1,6 @@
 'use client'
 
+import { ButtonWhite } from '@common'
 import styles from './Hero.module.css'
 
 const HERO_TITLE: string = "Isn't it time you were rewarded for your epic skills?"
@@ -13,6 +14,9 @@ const Hero = () => {
         <div className={styles.caption}>
           <h1 className={styles.title}>{HERO_TITLE}</h1>
           <p className={styles.text}>{HERO_DESCRIPTION}</p>
+          <ButtonWhite disableRipple component="a" href="/signup">
+            Log in
+          </ButtonWhite>
         </div>
       </div>
       <div className={styles.col}>{/* Leaderboard Component */}</div>
