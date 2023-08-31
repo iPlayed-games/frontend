@@ -7,7 +7,7 @@ const HERO_TITLE: string = "Isn't it time you were rewarded for your epic skills
 const HERO_DESCRIPTION: string =
   "Earn badges, show off your gaming prowess, and join a community where your achievements are celebrated like never before.  It's time to level up, unlock bragging rights, and embrace the glory at iPlayed!"
 
-const Hero = () => {
+export default function Hero() {
   return (
     <div className={styles.hero}>
       <div className={styles.col}>
@@ -22,5 +22,3 @@ const Hero = () => {
     </div>
   )
 }
-
-export default Hero

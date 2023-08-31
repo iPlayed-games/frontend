@@ -1,4 +1,3 @@
-/* TODO: */
 .leaderboard {
   margin-bottom: 10em;
   position: relative;
@@ -15,7 +14,7 @@
   float: right;
 }
 
-.h2 {
+.title {
   position: relative;
   isolation: isolate;
   text-align: center;
