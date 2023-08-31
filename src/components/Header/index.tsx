@@ -1,8 +1,7 @@
 'use client'
-import { FC } from 'react'
 import { Logo } from '@svg'
 import { CustomContainer, HeaderComponent, CustomBox } from './style'
-import { ButtonGradientFilled, ButtonGradientOutlined } from '../styled/Button'
+import { ButtonGradientFilled, ButtonGradientOutlined } from '../../common/Button'
 
 const Header = () => {
   return (

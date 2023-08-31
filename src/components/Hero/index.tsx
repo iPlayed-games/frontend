@@ -1,6 +1,6 @@
 'use client'
 
-import { ButtonWhite } from '../styled/Button'
+import { ButtonWhite } from '../../common/Button'
 import styles from './Hero.module.css'
 
 const HERO_TITLE: string = "Isn't it time you were rewarded for your epic skills?"
