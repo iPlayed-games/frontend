@@ -8,12 +8,13 @@ export const //colors
   $pinkColor = '#DE00FF',
   $blueColor = '#047CFF',
   $whiteColor = '#fafafa',
-  $whiteColorSemi = '	rgba(250,250,250,.2)'
+  $whiteColorSemi = 'rgba(250,250,250,.2)',
+  $titleBackgroundGradientColor = '#047CFF 0%, #DE00FF 50%, #1E0A6A 100%'
 
 export const $linearGradientToRight = `linear-gradient(to right, ${$pinkColor}, ${$blueColor})`,
   $linearGradientToTop = `linear-gradient(to top, ${$blueColor}, ${$pinkColor})`
 
 export const $borderImage = `
-    border-image-slice: 1;
-    border-image-source: ${$linearGradientToRight};
-`
+  border-image-slice: 1;
+  border-image-source: ${$linearGradientToRight};
+  `
