@@ -1,6 +1,13 @@
 import styled from '@emotion/styled'
-import MuiButton from "@mui/material/Button";
-import { $whiteColor, $linearGradientToRight, $linearGradientToTop, $borderImage, $whiteColorSemi, $darkColor } from '../../styles/_variables'
+import MuiButton from '@mui/material/Button'
+import {
+  $whiteColor,
+  $linearGradientToRight,
+  $linearGradientToTop,
+  $borderImage,
+  $whiteColorSemi,
+  $darkColor,
+} from '../../styles/_variables'
 
 const commonStyles = `
 border-radius: 0;
@@ -20,17 +27,17 @@ color: ${$whiteColor};
 }
 `
 export const ButtonGradientOutlined = styled(MuiButton)`
-${commonStyles}
-border: 1px solid;
-${$borderImage}
-background-color: transparent;
-position: relative;
+  ${commonStyles}
+  border: 1px solid;
+  ${$borderImage}
+  background-color: transparent;
+  position: relative;
 
-&:hover{
+  &:hover {
     border-image-source: ${$linearGradientToTop};
-}
+  }
 
-&::after {
+  &::after {
     content: '';
     position: absolute;
     width: calc(100% + 5px);
@@ -39,23 +46,23 @@ position: relative;
     ${$borderImage}
     filter: blur(4px);
     background-color: transparent;
-}
+  }
 
-&:hover::after {
+  &:hover::after {
     border-image-source: ${$linearGradientToTop};
-}
-`as typeof MuiButton;
+  }
+` as typeof MuiButton
 
 export const ButtonGradientFilled = styled(MuiButton)`
-${commonStyles}
-background: ${$linearGradientToRight};
-position: relative;
+  ${commonStyles}
+  background: ${$linearGradientToRight};
+  position: relative;
 
-&:hover {
+  &:hover {
     background: ${$linearGradientToTop};
-}
+  }
 
-&::after {
+  &::after {
     content: '';
     position: absolute;
     width: calc(100% + 4px);
@@ -63,24 +70,24 @@ position: relative;
     filter: blur(2px);
     border: 8px solid;
     ${$borderImage}
-}
+  }
 
-&:hover::after {
+  &:hover::after {
     border-image-source: ${$linearGradientToTop};
-}
-`as typeof MuiButton;
+  }
+` as typeof MuiButton
 
 export const ButtonWhite = styled(MuiButton)`
-${commonStyles}
-border: 1px solid ${$whiteColor};
-background: ${$whiteColorSemi};
-position: relative;
-&:hover{
+  ${commonStyles}
+  border: 1px solid ${$whiteColor};
+  background: ${$whiteColorSemi};
+  position: relative;
+  &:hover {
     background: ${$whiteColor};
     color: ${$darkColor};
-}
+  }
 
-&::after {
+  &::after {
     content: '';
     position: absolute;
     width: calc(100% + 5px);
@@ -88,5 +95,5 @@ position: relative;
     border: 4px solid ${$whiteColor};
     filter: blur(4px);
     background-color: transparent;
-}
-`as typeof MuiButton;
+  }
+` as typeof MuiButton
