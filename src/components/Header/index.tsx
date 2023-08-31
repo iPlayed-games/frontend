@@ -1,9 +1,8 @@
-'use client'
 import { Logo } from '@svg'
 import { CustomContainer, HeaderComponent, CustomBox } from './style'
-import { ButtonGradientFilled, ButtonGradientOutlined } from '../../common/Button'
+import { ButtonGradientFilled, ButtonGradientOutlined } from '@common'
 
-const Header = () => {
+export default function Header() {
   return (
     <HeaderComponent>
       <CustomContainer maxWidth="lg">
@@ -20,5 +19,3 @@ const Header = () => {
     </HeaderComponent>
   )
 }
-
-export default Header

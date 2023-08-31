@@ -1,5 +1,7 @@
+'use client'
 import styled from '@emotion/styled'
-import MuiButton from '@mui/material/Button'
+import Button from '@mui/material/Button'
+import { ButtonBaseProps } from '@mui/material'
 import {
   $whiteColor,
   $linearGradientToRight,
@@ -26,7 +28,10 @@ color: ${$whiteColor};
 
 }
 `
-export const ButtonGradientOutlined = styled(MuiButton)`
+//TODO: make the three buttons into one button
+//TODO: override ripple to make it unnecessary to disable in the component
+
+export const ButtonGradientOutlined = styled(Button)<ButtonBaseProps>`
   ${commonStyles}
   border: 1px solid;
   ${$borderImage}
@@ -51,9 +56,9 @@ export const ButtonGradientOutlined = styled(MuiButton)`
   &:hover::after {
     border-image-source: ${$linearGradientToTop};
   }
-` as typeof MuiButton
+`
 
-export const ButtonGradientFilled = styled(MuiButton)`
+export const ButtonGradientFilled = styled(Button)<ButtonBaseProps>`
   ${commonStyles}
   background: ${$linearGradientToRight};
   position: relative;
@@ -75,9 +80,9 @@ export const ButtonGradientFilled = styled(MuiButton)`
   &:hover::after {
     border-image-source: ${$linearGradientToTop};
   }
-` as typeof MuiButton
+`
 
-export const ButtonWhite = styled(MuiButton)`
+export const ButtonWhite = styled(Button)<ButtonBaseProps>`
   ${commonStyles}
   border: 1px solid ${$whiteColor};
   background: ${$whiteColorSemi};
@@ -96,4 +101,4 @@ export const ButtonWhite = styled(MuiButton)`
     filter: blur(4px);
     background-color: transparent;
   }
-` as typeof MuiButton
+`
