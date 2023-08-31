@@ -2,12 +2,9 @@
 import { FC } from 'react'
 import { Logo } from '@svg'
 import { CustomContainer, HeaderComponent, CustomBox } from './style'
-// import { Button } from '@mui/material'
-import { ButtonGradientFilled, ButtonGradientOutlined, ButtonWhite } from '../styled/Button'
+import { ButtonGradientFilled, ButtonGradientOutlined } from '../styled/Button'
 
-interface HeaderProps {}
-
-const Header: FC<HeaderProps> = ({}) => {
+const Header = () => {
   return (
     <HeaderComponent>
       <CustomContainer maxWidth="lg">
