@@ -1,4 +1,4 @@
-import { User } from '../types/userType'
+import { User } from '@typing/user'
 
 export function getSortedHighScores(userData: User[], recordSize: number): User[] {
   if (userData.length > 0) {

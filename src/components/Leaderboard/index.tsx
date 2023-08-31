@@ -6,8 +6,8 @@ import TableContainer from '@mui/material/TableContainer'
 import TableRow from '@mui/material/TableRow'
 import styles from './Leaderboard.module.css'
 import { userData } from '../../data/usersMockData'
-import { getSortedHighScores } from '@/src/utils/getSortedHighScores'
-import { User } from '../../types/userType'
+import { getSortedHighScores } from '../../utils/getSortedHighScores'
+import { User } from '@typing/user'
 
 const NUM_RECORDS_TO_DISPLAY = 5
 
@@ -17,7 +17,7 @@ export default function Leaderboard() {
   return (
     <Paper className={styles.leaderboard}>
       <TableContainer>
-        <h2 className={styles.title}>Leaderboard</h2>
+        <h2 className={styles.leaderboardTitle}>Leaderboard</h2>
         <Table aria-label="Leaderboard">
           <TableBody>
             {highScores.map(({ id, username, totalBadge }) => (

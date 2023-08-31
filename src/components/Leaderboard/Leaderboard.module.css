@@ -14,11 +14,11 @@
   float: right;
 }
 
-.title {
+.leaderboardTitle {
   position: relative;
   isolation: isolate;
   text-align: center;
-  color: #fafafa;
+  color: #000000;
   font-family: var(--font-roboto);
   font-weight: 900;
   font-size: 24px;
