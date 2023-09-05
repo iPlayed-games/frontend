@@ -1,6 +1,6 @@
 import MuiGlobalStyles, { GlobalStylesProps } from '@mui/material/GlobalStyles'
 import { Roboto } from 'next/font/google'
-import { $whiteColor } from './_variables'
+import { $whiteColor, $darkColor } from './_variables'
 
 const roboto = Roboto({
   weight: ['100', '300', '400', '500', '700', '900'],
@@ -23,6 +23,7 @@ const STYLES: GlobalStylesProps['styles'] = {
     color: $whiteColor,
     height: '100%',
     scrollBehavior: 'smooth',
+    backgroundColor: $darkColor,
   },
   'ol, ul': {
     listStyle: 'none',
