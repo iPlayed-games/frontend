@@ -1,6 +1,7 @@
 'use client'
 
 import styled from '@emotion/styled'
+import { $lgDesktopBreakpoint } from '../../styles/_variables'
 
 export const FooterContainer = styled.footer`
   position: absolute;
@@ -25,6 +26,9 @@ export const FooterContainer = styled.footer`
 `
 
 export const ScreenContainer = styled.div`
+  margin: 0 auto;
+  width: 100%;
+  max-width: ${$lgDesktopBreakpoint};
   padding-left: 83px;
   padding-right: 80px;
   padding-bottom: 64px;
