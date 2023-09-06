@@ -18,6 +18,9 @@ const STYLES: GlobalStylesProps['styles'] = {
     fillRule: 'evenodd',
     clipRule: 'evenodd',
   },
+  ':root': {
+    '--color-pink': 'rgb(240, 8, 235)',
+  },
   'html, body': {
     fontFamily: roboto.style.fontFamily,
     color: $whiteColor,
