@@ -1,6 +1,7 @@
 'use client'
 import styled from '@emotion/styled'
 import { Box, Container } from '@mui/material'
+import { $lgDesktopBreakpoint } from '../../styles/_variables'
 
 export const HeaderComponent = styled.header`
   background: rgb(240, 8, 235);
@@ -27,6 +28,7 @@ export const CustomContainer = styled(Container)`
   gap: 2rem;
   justify-content: space-between;
   align-items: center;
+  max-width: ${$lgDesktopBreakpoint} !important;
 `
 
 export const CustomBox = styled(Box)`
