@@ -1,14 +1,13 @@
 'use client'
 import styled from '@emotion/styled'
-import { $DiagonalGradient, $whiteColor, $blueColor, $pinkColor } from '../../styles/_variables'
+import { $whiteColor, $blueColor, $pinkColor } from '../../styles/_variables'
 
 export const StyledCard = styled.div`
   position: relative;
-  padding: 25px 16px 16px 16px;
-  width: 375;
-  height: 405px;
-  margin: 25px;
-  box-shadow: 0 0 10px 2px ${$blueColor};
+  padding: 1rem;
+  box-shadow:
+    ${$pinkColor} 0px 0px 10px 2px inset,
+    ${$blueColor} 0px 0px 10px 2px;
   border-radius: 20px;
   inset: -1px;
 
@@ -17,7 +16,7 @@ export const StyledCard = styled.div`
     position: absolute;
     inset: 0px;
     border-radius: 20px;
-    padding: 2px;
+    padding: 1px;
     background: linear-gradient(135deg, ${$blueColor}, ${$pinkColor});
     -webkit-mask:
       linear-gradient(${$whiteColor} 0 0) content-box,
