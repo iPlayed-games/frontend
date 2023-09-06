@@ -8,6 +8,7 @@ import styles from './Leaderboard.module.css'
 import { userData } from '../../data/usersMockData'
 import { getSortedHighScores } from '../../utils/getSortedHighScores'
 import { User } from '@typing/user'
+import { AccountCircleIcon } from '@svg'
 
 const NUM_RECORDS_TO_DISPLAY = 5
 
@@ -23,10 +24,13 @@ export default function Leaderboard() {
             {highScores.map(({ id, username, totalBadge }) => (
               <TableRow key={id}>
                 <TableCell className={styles.tableText}>
-                  <h3>
-                    {username}
-                    <span className={styles.badgeAlignRight}> {totalBadge}</span>
-                  </h3>
+                  <div className={styles.userContainer}>
+                    <div className={styles.userBox}>
+                      <AccountCircleIcon />
+                      <h3 className={styles.username}>{username}</h3>
+                    </div>
+                    <span className={styles.badgeAlignRight}> {totalBadge} Badges</span>
+                  </div>
                 </TableCell>
               </TableRow>
             ))}
