@@ -49,7 +49,6 @@
 .tableText {
   color: #fafafa !important;
   padding: 0 !important;
-  font-family: var(--font-roboto);
   font-weight: 500;
   line-height: 0em;
   font-size: 18px;
