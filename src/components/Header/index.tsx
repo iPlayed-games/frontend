@@ -5,7 +5,7 @@ import { ButtonGradientFilled, ButtonGradientOutlined } from '@common'
 export default function Header() {
   return (
     <HeaderComponent>
-      <CustomContainer maxWidth="lg">
+      <CustomContainer>
         <Logo />
         <CustomBox>
           <ButtonGradientOutlined disableRipple component="a" href="/login">

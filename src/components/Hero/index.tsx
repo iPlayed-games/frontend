@@ -1,6 +1,6 @@
 import { ButtonWhite } from '@common'
-import styles from './Hero.module.css'
 import { Leaderboard } from '@components'
+import { Container, Title, Wrapper, Description } from './styles'
 
 const HERO_TITLE: string = "Isn't it time you were rewarded for your epic skills?"
 const HERO_DESCRIPTION: string =
@@ -8,19 +8,19 @@ const HERO_DESCRIPTION: string =
 
 export default function Hero() {
   return (
-    <div className={styles.hero}>
-      <div className={styles.col}>
-        <div className={styles.caption}>
-          <h1 className={styles.title}>{HERO_TITLE}</h1>
-          <p className={styles.text}>{HERO_DESCRIPTION}</p>
+    <Wrapper>
+      <Container>
+        <div>
+          <Title>{HERO_TITLE}</Title>
+          <Description>{HERO_DESCRIPTION}</Description>
           <ButtonWhite disableRipple component="a" href="/signup">
             Log in
           </ButtonWhite>
         </div>
-      </div>
-      <div className={styles.col}>
-        <Leaderboard />
-      </div>
-    </div>
+        <div>
+          <Leaderboard />
+        </div>
+      </Container>
+    </Wrapper>
   )
 }
