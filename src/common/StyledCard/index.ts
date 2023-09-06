@@ -1,26 +1,28 @@
 'use client'
 import styled from '@emotion/styled'
-import { $borderGradient } from '../../styles/_variables'
+import { $DiagonalGradient, $whiteColor, $blueColor, $pinkColor } from '../../styles/_variables'
 
 export const StyledCard = styled.div`
   position: relative;
+  padding: 25px 16px 16px 16px;
+  width: 375;
+  height: 405px;
   margin: 25px;
-  padding: 40px 24px 60px 24px;
-  width: 300px;
-  height: 150px;
-  border: 5px solid;
-  ${$borderGradient}
+  box-shadow: 0 0 10px 2px ${$blueColor};
+  border-radius: 20px;
+  inset: -1px;
 
-  &::after {
+  &::before {
     content: '';
     position: absolute;
-    top: -7px;
-    left: -7px;
-    width: 305px;
-    height: 155px;
-    border: 4px solid;
-    ${$borderGradient}
-    filter: blur(4px);
-    background-color: transparent;
+    inset: 0px;
+    border-radius: 20px;
+    padding: 2px;
+    background: linear-gradient(135deg, ${$blueColor}, ${$pinkColor});
+    -webkit-mask:
+      linear-gradient(${$whiteColor} 0 0) content-box,
+      linear-gradient(${$whiteColor} 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
   }
 `

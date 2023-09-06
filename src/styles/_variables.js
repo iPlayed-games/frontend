@@ -19,8 +19,3 @@ export const $borderImage = `
   border-image-slice: 1;
   border-image-source: ${$linearGradientToRight};
   `
-
-export const $borderGradient = `
-  border-image-slice: 1;
-  border-image-source: ${$DiagonalGradient};
-  `
