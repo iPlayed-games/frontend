@@ -13,7 +13,7 @@ export default function Hero() {
         <div>
           <Title>{HERO_TITLE}</Title>
           <Description>{HERO_DESCRIPTION}</Description>
-          <ButtonWhite disableRipple component="a" href="/signup">
+          <ButtonWhite disableRipple component="a" href="/login">
             Log in
           </ButtonWhite>
         </div>
