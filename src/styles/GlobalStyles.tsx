@@ -23,6 +23,8 @@ const STYLES: GlobalStylesProps['styles'] = {
     '--color-blue': 'rgb(4, 124, 255)',
     '--color-white': 'rgb(250, 250, 250)',
     '--color-dark': 'rgb(30, 10, 106)',
+    '--color-white-semi': 'rgba(250,250,250,0.2)',
+    '--color-dark-semi': 'rgba(29, 10, 106, 0.2)',
   },
   'html, body': {
     fontFamily: roboto.style.fontFamily,
