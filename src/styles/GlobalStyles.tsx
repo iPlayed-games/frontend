@@ -22,7 +22,8 @@ const STYLES: GlobalStylesProps['styles'] = {
     '--color-blue': 'rgba(29, 83, 253)', //#1D53FD
     '--color-dark': 'rgb(11, 22, 102)', //#0B1666
     '--color-white': 'rgba(250, 250, 250)', //#FAFAFA
-    '--color-semi-white': 'rgba(250, 250, 250, .2)',
+    '--color-white-semi': 'rgba(250,250,250,0.2)',
+    '--color-dark-semi': 'rgba(29, 10, 106, 0.2)',
     '--breakpoint-large-desktop': '80rem',
   },
   'html, body': {
