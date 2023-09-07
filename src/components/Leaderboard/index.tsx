@@ -2,10 +2,8 @@ import { TableText, UserBox, Container, Title, Username, BadgeContainer, UserCon
 
 import Table from '@mui/material/Table'
 import TableBody from '@mui/material/TableBody'
-
 import TableContainer from '@mui/material/TableContainer'
 import TableRow from '@mui/material/TableRow'
-
 import { userData } from '../../data/usersMockData'
 import { getSortedHighScores } from '../../utils/getSortedHighScores'
 import { User } from '@typing/user'

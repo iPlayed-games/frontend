@@ -13,7 +13,7 @@ export const Container = styled.div`
     var(--color-white) 0px 0px 10px 2px;
   border-radius: 20px;
   inset: -1px;
-  background: var(--color-white-semi);
+  background: linear-gradient(to top, var(--color-dark-semi), var(--color-white-semi));
 
   &::before {
     content: '';
@@ -21,12 +21,7 @@ export const Container = styled.div`
     inset: 0px;
     border-radius: 20px;
     padding: 1%.5;
-    background: var(--color-white);
-    -webkit-mask:
-      linear-gradient(var(--color-white) 0 0) content-box,
-      linear-gradient(var(--color-white) 0 0);
-    -webkit-mask-composite: xor;
-    mask-composite: exclude;
+    background: var(--color-white-semi);
   }
 `
 
