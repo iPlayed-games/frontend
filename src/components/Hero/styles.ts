@@ -1,6 +1,5 @@
 'use client'
 import styled from '@emotion/styled'
-import { $lgDesktopBreakpoint } from '../../styles/_variables'
 
 export const Wrapper = styled.section`
   display: flex;
@@ -17,7 +16,7 @@ export const Container = styled.div`
   display: flex;
   margin: 0 auto;
   width: 100%;
-  max-width: ${$lgDesktopBreakpoint};
+  max-width: var(----breakpoint-large-desktop);
   padding-left: 24px;
   padding-right: 24px;
   padding-top: 75px;
