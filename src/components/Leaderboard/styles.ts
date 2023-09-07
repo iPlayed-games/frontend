@@ -1,13 +1,5 @@
 'use client'
 import styled from '@emotion/styled'
-import {
-  $lgDesktopBreakpoint,
-  $whiteColorSemi,
-  $darkColor,
-  $whiteColor,
-  $blueColor,
-  $pinkColor,
-} from '../../styles/_variables'
 
 export const Container = styled.div`
   overflow: hidden;
@@ -17,11 +9,11 @@ export const Container = styled.div`
   position: relative;
   padding: 1rem;
   box-shadow:
-    ${$whiteColor} 0px 0px 10px 2px inset,
-    ${$whiteColor} 0px 0px 10px 2px;
+    var(--color-white) 0px 0px 10px 2px inset,
+    var(--color-white) 0px 0px 10px 2px;
   border-radius: 20px;
   inset: -1px;
-  background: ${$whiteColorSemi};
+  background: var(--color-white-semi);
 
   &::before {
     content: '';
@@ -29,10 +21,10 @@ export const Container = styled.div`
     inset: 0px;
     border-radius: 20px;
     padding: 1%.5;
-    background: ${$whiteColor};
+    background: var(--color-white);
     -webkit-mask:
-      linear-gradient(${$whiteColor} 0 0) content-box,
-      linear-gradient(${$whiteColor} 0 0);
+      linear-gradient(var(--color-white) 0 0) content-box,
+      linear-gradient(var(--color-white) 0 0);
     -webkit-mask-composite: xor;
     mask-composite: exclude;
   }
@@ -41,7 +33,7 @@ export const Container = styled.div`
 export const Title = styled.h2`
   margin: 0;
   padding: 1rem;
-  color: ${$whiteColor};
+  color: var(--color-white);
   font-size: 24px;
   font-weight: 300;
   line-height: normal;
@@ -51,14 +43,14 @@ export const Title = styled.h2`
 export const Username = styled.p`
   margin: 0;
   padding: 1rem;
-  color: ${$whiteColor};
+  color: var(--color-white);
   font-size: 16px;
   font-weight: 300;
   line-height: normal;
   text-align: center;
 `
 export const BadgeContainer = styled.p`
-  color: ${$whiteColor};
+  color: var(--color-white);
   margin: 0;
   padding: 1rem;
   font-size: 1rem;
@@ -71,8 +63,8 @@ export const UserContainer = styled.div`
   width: 100%;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1px solid ${$whiteColor};
-  box-shadow: ${$whiteColor} 0px 0px 5px 1px;
+  border-bottom: 1px solid var(--color-white);
+  box-shadow: var(--color-white) 0px 0px 5px 1px;
 `
 
 export const UserBox = styled.div`

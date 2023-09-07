@@ -20,6 +20,10 @@ const STYLES: GlobalStylesProps['styles'] = {
   },
   ':root': {
     '--color-pink': 'rgb(240, 8, 235)',
+    '--color-blue': 'rgb(4, 124, 255)',
+    '--color-white': 'rgb(250, 250, 250)',
+    '--color-dark': 'rgb(30, 10, 106)',
+    '--color-white-semi': 'rgba(250,250,250,.2)',
   },
   'html, body': {
     fontFamily: roboto.style.fontFamily,

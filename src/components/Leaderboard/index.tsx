@@ -1,12 +1,11 @@
 import { TableText, UserBox, Container, Title, Username, BadgeContainer, UserContainer } from './styles'
 
-import Paper from '@mui/material/Paper'
 import Table from '@mui/material/Table'
 import TableBody from '@mui/material/TableBody'
-import TableCell from '@mui/material/TableCell'
+
 import TableContainer from '@mui/material/TableContainer'
 import TableRow from '@mui/material/TableRow'
-import styles from './Leaderboard.module.css'
+
 import { userData } from '../../data/usersMockData'
 import { getSortedHighScores } from '../../utils/getSortedHighScores'
 import { User } from '@typing/user'
