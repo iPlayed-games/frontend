@@ -5,7 +5,6 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <CustomCard>Child Text Passed In From Above</CustomCard>
     </>
   )
 }
