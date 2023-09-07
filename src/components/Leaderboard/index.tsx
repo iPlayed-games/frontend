@@ -1,3 +1,5 @@
+import { TableText, UserBox, Container, Title, Username, BadgeContainer, UserContainer } from './styles'
+
 import Paper from '@mui/material/Paper'
 import Table from '@mui/material/Table'
 import TableBody from '@mui/material/TableBody'
@@ -16,27 +18,27 @@ export default function Leaderboard() {
   const highScores: User[] = getSortedHighScores(userData, NUM_RECORDS_TO_DISPLAY)
 
   return (
-    <Paper className={styles.leaderboard}>
+    <Container>
       <TableContainer>
-        <h2 className={styles.leaderboardTitle}>Leaderboard</h2>
+        <Title>Leaderboard</Title>
         <Table aria-label="Leaderboard">
           <TableBody>
             {highScores.map(({ id, username, totalBadge }) => (
               <TableRow key={id}>
-                <TableCell className={styles.tableText}>
-                  <div className={styles.userContainer}>
-                    <div className={styles.userBox}>
+                <TableText>
+                  <UserContainer>
+                    <UserBox>
                       <AccountCircleIcon />
-                      <h3 className={styles.username}>{username}</h3>
-                    </div>
-                    <span className={styles.badgeAlignRight}> {totalBadge} Badges</span>
-                  </div>
-                </TableCell>
+                      <Username>{username}</Username>
+                    </UserBox>
+                    <BadgeContainer> {totalBadge} badges</BadgeContainer>
+                  </UserContainer>
+                </TableText>
               </TableRow>
             ))}
           </TableBody>
         </Table>
       </TableContainer>
-    </Paper>
+    </Container>
   )
 }

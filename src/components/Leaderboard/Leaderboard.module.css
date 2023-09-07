@@ -12,25 +12,6 @@
   box-shadow: 0 0 5px 5px #888 !important;
 }
 
-.badgeAlignRight {
-  color: #fff !important;
-}
-
-.userContainer {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  -moz-box-shadow: 0 0 5px 5px #888 !important;
-  -webkit-box-shadow: 0 0 5px 5px#888 !important;
-  box-shadow: 0 0 2px 2px #888 !important;
-}
-
-.userBox {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
 .leaderboardTitle {
   position: relative;
   isolation: isolate;
@@ -44,12 +25,4 @@
 
 .username {
   color: #fff !important;
-}
-
-.tableText {
-  color: #fafafa !important;
-  padding: 0 !important;
-  font-weight: 500;
-  line-height: 0em;
-  font-size: 18px;
 }
