@@ -146,8 +146,8 @@ export const userData: User[] = [
     name: 'savannah',
     email: 'sh4@outlook.com',
     password: 'abcde',
-    username: 'sheart4',
-    totalBadge: 12,
+    username: 'New Name 4',
+    totalBadge: 60,
     createdAt: '2023-08-24T15:30:07.523Z',
     updatedAt: '2023-08-24T15:30:07.523Z',
     venue: [
@@ -230,8 +230,8 @@ export const userData: User[] = [
     name: 'savannah',
     email: 'sh4@outlook.com',
     password: 'abcde',
-    username: 'sheart4',
-    totalBadge: 12,
+    username: 'heart 11',
+    totalBadge: 11,
     createdAt: '2023-08-24T15:33:18.103Z',
     updatedAt: '2023-08-24T15:33:18.103Z',
     venue: [
@@ -314,8 +314,8 @@ export const userData: User[] = [
     name: 'savannah',
     email: 'sh4@outlook.com',
     password: 'abcde',
-    username: 'sheart4',
-    totalBadge: 12,
+    username: 'heart 36',
+    totalBadge: 36,
     createdAt: '2023-08-24T15:50:24.705Z',
     updatedAt: '2023-08-24T15:50:24.705Z',
     venue: [
