@@ -7,7 +7,7 @@ export const //colors
   $darkColor = '#1E0A6A',
   $pinkColor = '#DE00FF',
   $blueColor = '#047CFF',
-  $whiteColor = '#fff',
+  $whiteColor = '#fafafa',
   $whiteColorSemi = 'rgba(250,250,250,.2)',
   $titleBackgroundGradientColor = '#047CFF 0%, #DE00FF 50%, #1E0A6A 100%'
 
