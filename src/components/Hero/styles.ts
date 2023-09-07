@@ -2,21 +2,24 @@
 import styled from '@emotion/styled'
 import { $lgDesktopBreakpoint } from '../../styles/_variables'
 
-export const Wrapper = styled.section`
+export const ScreenWrapper = styled.section`
   display: flex;
   margin: 0;
   width: 100%;
   height: 550px;
-  background-image: url('images/hero_background.svg');
-  background-size: 100% auto;
-  background-repeat: no-repeat;
-  background-position: center;
+`
+
+export const ImageWrapper = styled.div`
+  width: 100vw;
+  position: fixed;
+  z-index: -1;
 `
 
 export const Container = styled.div`
   display: flex;
   margin: 0 auto;
   width: 100%;
+
   max-width: ${$lgDesktopBreakpoint};
   padding-left: 24px;
   padding-right: 24px;
