@@ -55,21 +55,23 @@ export const BadgeContainer = styled.p`
 
 export const UserContainer = styled.div`
   display: flex;
-  width: 100%;
+  width: 300px;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1px solid var(--color-white);
-  box-shadow: var(--color-white) 0px 0px 5px 1px;
 `
 
 export const UserBox = styled.div`
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 1em;
 `
 
 export const TableText = styled.div`
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 1em;
+`
+export const Divider = styled.div`
+  border-bottom: 1px solid var(--color-white);
+  box-shadow: var(--color-white) 0px 0px 5px 1px;
 `
