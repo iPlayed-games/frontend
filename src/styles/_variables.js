@@ -12,8 +12,7 @@ export const //colors
   $titleBackgroundGradientColor = '#047CFF 0%, #DE00FF 50%, #1E0A6A 100%'
 
 export const $linearGradientToRight = `linear-gradient(to right, ${$pinkColor}, ${$blueColor})`,
-  $linearGradientToTop = `linear-gradient(to top, ${$blueColor}, ${$pinkColor})`,
-  $DiagonalGradient = `linear-gradient(135deg, ${$blueColor}, ${$pinkColor})`
+  $linearGradientToTop = `linear-gradient(to top, ${$blueColor}, ${$pinkColor})`
 
 export const $borderImage = `
   border-image-slice: 1;
