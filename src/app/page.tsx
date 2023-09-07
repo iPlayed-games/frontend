@@ -1,11 +1,11 @@
 import { Hero } from '@components'
-import { StyledCard } from 'common/StyledCard'
+import { CustomCard } from '@common'
 
 export default function Home() {
   return (
-    <main>
+    <>
       <Hero />
-      <StyledCard>Child Text Passed In From Above</StyledCard>
-    </main>
+      <CustomCard>Child Text Passed In From Above</CustomCard>
+    </>
   )
 }
