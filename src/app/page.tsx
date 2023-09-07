@@ -5,8 +5,6 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <SectionTitle title="This is a title" />
-      <CategoryLabel label="label" />
     </>
   )
 }

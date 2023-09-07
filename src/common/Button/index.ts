@@ -82,7 +82,7 @@ export const ButtonGradientFilled = styled(Button)<ButtonBaseProps>`
 export const ButtonWhite = styled(Button)<ButtonBaseProps>`
   ${commonStyles}
   border: 1px solid var(--color-white);
-  background: var(--color-semi-white);
+  background: var(--color-white-semi);
   position: relative;
   &:hover {
     background: var(--color-white);
