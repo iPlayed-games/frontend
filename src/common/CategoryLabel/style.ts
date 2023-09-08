@@ -1,15 +1,14 @@
 'use client'
 import styled from '@emotion/styled'
-import { $whiteColor, $whiteColorSemi } from '../../styles/_variables'
 
 export const LabelContainer = styled.span`
   display: inline-block;
-  background-color: ${$whiteColorSemi};
+  background-color: var(--color-white-semi);
   padding: 0.25rem 1rem;
 `
 
 export const Label = styled.p`
-  color: ${$whiteColor};
+  color: var(--color-white);
   font-size: 1rem;
   text-transform: uppercase;
   line-height: 1rem;

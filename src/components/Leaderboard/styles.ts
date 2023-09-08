@@ -6,6 +6,7 @@ export const Container = styled.div`
   align-items: center;
   width: 100%;
   max-width: 340px;
+  height: 428px;
   position: relative;
   padding: 1rem;
   box-shadow:
@@ -66,12 +67,10 @@ export const UserBox = styled.div`
   gap: 1em;
 `
 
-export const TableText = styled.div`
+export const TableText = styled.td`
+  border: 0;
   display: flex;
   align-items: center;
+  box-shadow: var(--color-white) 0px 0px 5px 2px;
   gap: 1em;
-`
-export const Divider = styled.div`
-  border-bottom: 1px solid var(--color-white);
-  box-shadow: var(--color-white) 0px 0px 5px 1px;
 `

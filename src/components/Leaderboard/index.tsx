@@ -1,4 +1,5 @@
-import { TableText, UserBox, Container, Title, Username, BadgeContainer, UserContainer, Divider } from './styles'
+'use client'
+import { TableText, UserBox, Container, Title, Username, BadgeContainer, UserContainer } from './styles'
 
 import Table from '@mui/material/Table'
 import TableBody from '@mui/material/TableBody'
@@ -9,7 +10,7 @@ import { getSortedHighScores } from '../../utils/getSortedHighScores'
 import { User } from '@typing/user'
 import { AccountCircleIcon } from '@svg'
 
-const NUM_RECORDS_TO_DISPLAY = 5
+const NUM_RECORDS_TO_DISPLAY = 6
 
 export default function Leaderboard() {
   const highScores: User[] = getSortedHighScores(userData, NUM_RECORDS_TO_DISPLAY)
@@ -31,7 +32,6 @@ export default function Leaderboard() {
                     <BadgeContainer> {totalBadge} badges</BadgeContainer>
                   </UserContainer>
                 </TableText>
-                <Divider />
               </TableRow>
             ))}
           </TableBody>
