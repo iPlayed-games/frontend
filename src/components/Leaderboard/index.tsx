@@ -1,4 +1,5 @@
-import { TableText, UserBox, Container, Title, Username, BadgeContainer, UserContainer, Divider } from './styles'
+'use client'
+import { TableText, UserBox, Container, Title, Username, BadgeContainer, UserContainer } from './styles'
 
 import Table from '@mui/material/Table'
 import TableBody from '@mui/material/TableBody'
@@ -31,7 +32,6 @@ export default function Leaderboard() {
                     <BadgeContainer> {totalBadge} badges</BadgeContainer>
                   </UserContainer>
                 </TableText>
-                <Divider />
               </TableRow>
             ))}
           </TableBody>
