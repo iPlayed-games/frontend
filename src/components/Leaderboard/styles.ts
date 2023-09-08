@@ -6,6 +6,7 @@ export const Container = styled.div`
   align-items: center;
   width: 100%;
   max-width: 340px;
+  height: 428px;
   position: relative;
   padding: 1rem;
   box-shadow:
@@ -58,7 +59,6 @@ export const UserContainer = styled.div`
   width: 300px;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1px solid var(--color-white);
 `
 
 export const UserBox = styled.div`
@@ -71,6 +71,6 @@ export const TableText = styled.td`
   border: 0;
   display: flex;
   align-items: center;
-  box-shadow: var(--color-white) 0px 0px 5px 1px;
+  box-shadow: var(--color-white) 0px 0px 5px 2px;
   gap: 1em;
 `

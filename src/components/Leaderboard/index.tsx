@@ -10,7 +10,7 @@ import { getSortedHighScores } from '../../utils/getSortedHighScores'
 import { User } from '@typing/user'
 import { AccountCircleIcon } from '@svg'
 
-const NUM_RECORDS_TO_DISPLAY = 5
+const NUM_RECORDS_TO_DISPLAY = 6
 
 export default function Leaderboard() {
   const highScores: User[] = getSortedHighScores(userData, NUM_RECORDS_TO_DISPLAY)
