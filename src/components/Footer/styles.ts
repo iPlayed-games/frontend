@@ -4,23 +4,24 @@ import styled from '@emotion/styled'
 import { $lgDesktopBreakpoint } from '../../styles/_variables'
 
 export const FooterContainer = styled.footer`
-  position: absolute;
-  bottom: 0;
+  margin-top: auto;
   width: 100%;
+  background: rgb(240, 8, 235);
   background: -moz-linear-gradient(
     163deg,
-    var(--color-pink) 8%,
+    rgba(240, 8, 235, 1) 8%,
     rgba(192, 26, 242, 1) 20%,
     rgba(29, 83, 253, 1) 55%,
     rgba(11, 22, 102, 1) 79%
   );
   background: -webkit-linear-gradient(
     163deg,
-    var(--color-pink) 8%,
+    rgba(240, 8, 235, 1) 8%,
     rgba(192, 26, 242, 1) 20%,
     rgba(29, 83, 253, 1) 55%,
     rgba(11, 22, 102, 1) 79%
   );
+  background: linear-gradient(163deg, rgba(240, 8, 235, 1) 0%, rgba(29, 83, 253, 1) 35%, rgba(11, 22, 102, 1) 79%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f008eb",endColorstr="#0b1666",GradientType=1);
   min-height: 22rem;
 `
