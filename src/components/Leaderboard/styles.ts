@@ -59,6 +59,7 @@ export const UserContainer = styled.div`
   align-items: center;
   justify-content: space-between;
   border-bottom: 1px solid var(--color-white);
+
 `
 
 export const UserBox = styled.div`
