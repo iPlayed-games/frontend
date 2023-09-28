@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import ThemeRegistry from '../contexts/themeRegistry/ThemeRegistry'
 import { Footer, Header } from '@components'
+import { PageConainer } from 'components/PageContainer'
 
 export const metadata: Metadata = {
   title: 'iPlayed.games',
@@ -13,9 +14,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en">
       <body>
         <ThemeRegistry>
-          <Header />
-          {children}
-          <Footer />
+          <PageConainer>
+            <Header />
+            {children}
+            <Footer />
+          </PageConainer>
         </ThemeRegistry>
       </body>
     </html>
